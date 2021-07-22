@@ -1,0 +1,84 @@
+.About-container{
+width: 95%;
+display: flex;
+flex-direction: row;
+background-color: rgb(221, 218, 218);
+justify-content: space-evenly;
+margin: 0px auto;
+padding: 30px;
+position: relative;
+}
+.left-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.my-name{
+    font-size: 24px;
+    font-weight: bold;
+}
+.my-img{
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+    z-index: 22;
+}
+.my-img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.about-myself{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 500px;
+}
+.contact-div{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: whitesmoke;
+    height: 100%;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.img-contact{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.progress-tag{
+    padding: 10px;
+    width: 100%;
+}
+@media only screen and (max-width: 600px){
+    .About-container{
+        flex-direction: column;
+        width: 80%;
+    }
+    .about-myself{
+        width: 300px;
+    }
+    .contact-div{
+        height: 23%;
+        width: 60px;
+    }
+    .my-img{
+        width: 150px;
+        height: 150px;
+        margin-top: 0px;
+
+    }
+    .img-contact{
+        width: 25px;
+        height: 25px;
+        margin-top: 10px;
+    }
+}

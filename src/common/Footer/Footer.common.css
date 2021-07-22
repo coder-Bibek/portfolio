@@ -1,0 +1,45 @@
+.footer-div {
+  margin-top: 20px;
+  width: 100%;
+  background-color: black;
+
+}
+.footer-container {
+  display: flex;
+  width: 90%;
+  margin: 0px auto;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+
+}
+.section-1{
+    display: flex;
+    flex-direction: column;
+}
+.section-1 label{
+    color: white;
+    font-size: 1.25rem;
+    margin-top: 10px;
+}
+.section-2{
+    display: flex;
+    flex-direction: column;
+}
+.section-2 label{
+    color: white;
+    font-size: 1.25rem;
+    margin-top: 10px;
+}
+.section-3{
+    display: flex;
+    flex-direction: column;
+}
+.section-3 label{
+    color: white;
+    font-size: 1.25rem;
+    margin-top: 10px;
+    /* text-decoration: underline; */
+}
