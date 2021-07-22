@@ -42,10 +42,30 @@ const About = () => {
           </label>
         </section>
         <section className="contact-div">
-          <img src={facebook} alt="facebook" className="img-contact" />
-          <img src={twitter} alt="twitter" className="img-contact" />
-          <img src={insta} alt="insta" className="img-contact" />
-          <img src={git} alt="git" className="img-contact" />
+          <a
+            href="https://www.facebook.com/bivek.bidari"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={facebook} alt="facebook" className="img-contact" />
+          </a>
+          <a href="/" target="_blank">
+            <img src={twitter} alt="twitter" className="img-contact" />
+          </a>
+          <a
+            href="https://www.instagram.com/_bibekbidari_/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={insta} alt="insta" className="img-contact" />
+          </a>
+          <a
+            href="https://github.com/coder-Bibek"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={git} alt="git" className="img-contact" />
+          </a>
         </section>
       </div>
     </div>
