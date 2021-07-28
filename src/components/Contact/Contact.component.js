@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.component.css";
 const Contact = () => {
+  const [number, setNumber] = useState("");
   return (
     <div className="contact-main" id="contact-div">
       <div className="contact-section">
@@ -16,14 +17,15 @@ const Contact = () => {
             placeholder="Enter your number"
             type="number"
             className="numinp"
+            value={number}
+            onChange={(e) => setNumber(e.target.value)}
             required
           />
           <br />
           <input
-            placeholder="Enter your number"
-            type="number"
+            placeholder="Enter your company name"
+            type="company"
             className="numinp"
-            required
           />
         </form>
         <section>
@@ -31,12 +33,16 @@ const Contact = () => {
             cols={36}
             rows={6}
             placeholder="message..."
-            className="txtarea"
+            className="txtarea col-sm-6"
           />
           <button
             className="submit-btn"
             type="submit"
-            onClick={() => alert("Thankyou for your feedback")}
+            onClick={() => {
+              number !== ""
+                ? alert("Thankyou for your feedback")
+                : alert("please fill all the fields");
+            }}
           >
             SUBMIT
           </button>
